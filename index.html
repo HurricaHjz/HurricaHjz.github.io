@@ -19,6 +19,8 @@
     li { margin: 0 0 8px; font-size: 1.05rem; }
     a { color: var(--accent); text-decoration: none; }
     a:hover { text-decoration: underline; }
+    .film { margin: 8px 0 28px; width: min(960px, calc(100vw - 48px)); position: relative; left: 50%; transform: translateX(-50%); }
+    .film video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 10px; background: #0B0E1F; box-shadow: 0 10px 30px rgba(20, 30, 60, 0.18); }
   </style>
 </head>
 <body>
@@ -26,6 +28,12 @@
     <h1>Mingjun (Jerry) <span>Zhang</span></h1>
     <p class="role">DPhil student in Computer Science, University of Oxford (Kellogg College)</p>
     <p>I am building <a href="https://github.com/HurricaHjz/SecondSelf">aiMyth</a> (open-sourced as SecondSelf), which builds your second self by giving your AI harness a “mind” of your own.</p>
+    <figure class="film" id="film">
+      <video controls playsinline preload="metadata" poster="aimyth-film-poster.jpg">
+        <source src="aimyth-film.mp4" type="video/mp4">
+        <a href="aimyth-film.mp4">Watch the aiMyth film</a>
+      </video>
+    </figure>
     <ul>
       <li>The mind is made of your knowledge, rules and lessons, kept in interconnected files stored on your own computer, and it can learn, improve, do tasks and organise teams of agents just as you would have done yourself, from whatever harness you already use, such as Claude Code.</li>
       <li>Today it runs in Claude Code, and GPT models can join as helpers through the Codex CLI. v0.10 released in November 2026; in daily use since June 2026; 100+ GitHub stars; built alone from scratch; arXiv preprint forthcoming.</li>
