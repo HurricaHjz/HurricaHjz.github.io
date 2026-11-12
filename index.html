@@ -2,49 +2,285 @@
 <html lang="en-GB">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mingjun (Jerry) Zhang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Mingjun (Jerry) Zhang · aiMyth</title>
   <meta name="description" content="Mingjun (Jerry) Zhang, DPhil student in Computer Science at the University of Oxford, building aiMyth.">
-  <style>
-    :root { --accent: #1A5DAB; --text: #2B2B2B; --muted: #6B6B6B; }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; color: var(--text); background: #FFFFFF; line-height: 1.6; }
-    main { max-width: 680px; margin: 0 auto; padding: 12vh 24px 64px; }
-    h1 { font-weight: 300; font-size: 2.4rem; margin: 0 0 4px; letter-spacing: 0.01em; }
-    h1 span { color: var(--accent); font-weight: 500; }
-    .role { color: var(--muted); margin: 0 0 40px; }
-    p { margin: 0 0 20px; font-size: 1.05rem; }
-    .links { display: flex; flex-wrap: wrap; gap: 12px 24px; margin-top: 36px; padding-top: 24px; border-top: 1px solid #E3E3E3; }
-    ul { margin: 0 0 20px; padding-left: 1.2em; }
-    li { margin: 0 0 8px; font-size: 1.05rem; }
-    a { color: var(--accent); text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    .film { margin: 8px 0 28px; width: min(960px, calc(100vw - 48px)); position: relative; left: 50%; transform: translateX(-50%); }
-    .film video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; border-radius: 10px; background: #0B0E1F; box-shadow: 0 10px 30px rgba(20, 30, 60, 0.18); }
-  </style>
+  <meta name="author" content="Mingjun (Jerry) Zhang">
+  <meta name="theme-color" content="#05060f">
+  <meta name="color-scheme" content="dark">
+  <link rel="canonical" href="https://hurricahjz.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mingjun (Jerry) Zhang">
+  <meta property="og:title" content="aiMyth: build your second self">
+  <meta property="og:description" content="Mingjun (Jerry) Zhang, DPhil student in Computer Science at the University of Oxford, building aiMyth. Watch the three-minute film.">
+  <meta property="og:url" content="https://hurricahjz.github.io/">
+  <meta property="og:image" content="https://hurricahjz.github.io/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="aiMyth: build your second self. A knowledge graph in blue joined to a mind in violet.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/inter-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-serif-latin-400-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="film/poster.jpg" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="assets/site.css">
+  <script>document.documentElement.className = 'js';</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mingjun (Jerry) Zhang",
+    "alternateName": "Jerry Zhang",
+    "url": "https://hurricahjz.github.io/",
+    "email": "mailto:jerry.zhang@kellogg.ox.ac.uk",
+    "jobTitle": "DPhil student in Computer Science",
+    "affiliation": { "@type": "CollegeOrUniversity", "name": "University of Oxford" },
+    "sameAs": [
+      "https://github.com/HurricaHjz",
+      "https://www.linkedin.com/in/mj4life/",
+      "https://scholar.google.com/citations?user=8eFcGUgAAAAJ&hl=en",
+      "https://www.inet.ox.ac.uk/people/jerry-zhang"
+    ]
+  }
+  </script>
 </head>
 <body>
-  <main>
-    <h1>Mingjun (Jerry) <span>Zhang</span></h1>
-    <p class="role">DPhil student in Computer Science, University of Oxford (Kellogg College)</p>
-    <p>I am building <a href="https://github.com/HurricaHjz/SecondSelf">aiMyth</a> (open-sourced as SecondSelf), which builds your second self by giving your AI harness a “mind” of your own.</p>
-    <figure class="film" id="film">
-      <video controls playsinline preload="metadata" poster="aimyth-film-poster.jpg">
-        <source src="aimyth-film.mp4" type="video/mp4">
-        <a href="aimyth-film.mp4">Watch the aiMyth film</a>
-      </video>
-    </figure>
-    <ul>
-      <li>The mind is made of your knowledge, rules and lessons, kept in interconnected files stored on your own computer, and it can learn, improve, do tasks and organise teams of agents just as you would have done yourself, from whatever harness you already use, such as Claude Code.</li>
-      <li>Today it runs in Claude Code, and GPT models can join as helpers through the Codex CLI. v0.10 released in November 2026; in daily use since June 2026; 100+ GitHub stars; built alone from scratch; arXiv preprint forthcoming.</li>
-    </ul>
-    <p>My DPhil research trains language models to give an answer together with a calibrated confidence, so that they know when to defer. I am supervised by Prof. Ani Calinescu and Prof. Michael Wooldridge, and I am a member of the Large Agent Collider.</p>
-    <nav class="links">
-      <a href="https://github.com/HurricaHjz/SecondSelf">aiMyth on GitHub</a>
-      <a href="https://github.com/HurricaHjz">GitHub</a>
-      <a href="https://www.linkedin.com/in/mj4life/">LinkedIn</a>
-      <a href="mailto:jerry.zhang@kellogg.ox.ac.uk">jerry.zhang@kellogg.ox.ac.uk</a>
+  <a class="skip" href="#film">Skip to the film</a>
+
+  <canvas class="sky" id="sky" aria-hidden="true"></canvas>
+  <div class="aura" aria-hidden="true"></div>
+  <div class="veil" id="veil" aria-hidden="true"></div>
+
+  <header class="mast" id="mast" data-dim>
+    <a class="mast-name" href="#top" aria-label="Mingjun (Jerry) Zhang, back to the top">
+      <svg class="mark" viewBox="0 0 28 28" width="22" height="22" aria-hidden="true"><path d="M8.5 14h11" stroke="url(#mk)" stroke-width="1.4" stroke-linecap="round"/><circle cx="8" cy="14" r="4.2" fill="#7cc8ff"/><circle cx="20" cy="14" r="4.2" fill="#b48cff"/><defs><linearGradient id="mk" x1="8" x2="20" y1="14" y2="14" gradientUnits="userSpaceOnUse"><stop stop-color="#7cc8ff"/><stop offset="1" stop-color="#b48cff"/></linearGradient></defs></svg>
+      <span>Mingjun (Jerry) Zhang</span>
+    </a>
+    <nav class="mast-nav" aria-label="Sections">
+      <a href="#about">About</a>
+      <a href="#aimyth">aiMyth</a>
+      <a class="mast-cta" href="#contact">Contact</a>
     </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ============================== The first screen: the film ============================== -->
+    <section class="hero" id="hero" aria-labelledby="title">
+      <canvas class="dust" id="dust" aria-hidden="true"></canvas>
+
+      <div class="hero-head" data-dim>
+        <h1 class="title" id="title">aiMyth</h1>
+        <p class="tagline">Build your second self.</p>
+      </div>
+
+      <div class="film-slot">
+        <div class="film" id="film">
+          <canvas class="film-glow" id="film-glow" width="32" height="18" aria-hidden="true"></canvas>
+          <div class="film-frame">
+            <video id="video" controls preload="metadata" poster="film/poster.jpg" width="1920" height="1080" aria-label="The aiMyth film, three minutes, with sound and captions">
+              <source src="film/aimyth-film-720p.mp4" type="video/mp4" media="(max-width: 760px), (max-height: 520px)">
+              <source src="film/aimyth-film.mp4" type="video/mp4">
+              <a href="film/aimyth-film.mp4">Download the aiMyth film (MP4)</a>
+            </video>
+            <button class="film-cover" id="film-cover" type="button" aria-label="Play the aiMyth film, three minutes, with sound">
+              <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24" width="30" height="30"><path d="M8.2 5.3v13.4a.8.8 0 0 0 1.2.7l11-6.7a.8.8 0 0 0 0-1.4l-11-6.7a.8.8 0 0 0-1.2.7Z" fill="currentColor"/></svg></span>
+              <span class="film-label" aria-hidden="true">
+                <span class="film-label-main">Watch the film</span>
+                <span class="film-label-meta">3:03 · sound on · captions built in</span>
+              </span>
+            </button>
+            <div class="film-end" id="film-end" hidden>
+              <p class="film-end-line">aiMyth. <em>Build your second self.</em></p>
+              <div class="film-end-actions">
+                <button class="btn" id="film-replay" type="button">Watch again</button>
+                <a class="btn btn-quiet" href="https://github.com/HurricaHjz/SecondSelf" target="_blank" rel="noopener">SecondSelf on GitHub <span aria-hidden="true">↗</span></a>
+                <a class="btn btn-quiet" href="#contact" data-leave-theatre>Get in touch</a>
+              </div>
+            </div>
+          </div>
+          <button class="film-close" id="film-close" type="button" hidden>Close <kbd>Esc</kbd></button>
+        </div>
+      </div>
+
+      <div class="hero-foot" data-dim>
+        <p class="byline"><span>Built alone from scratch by <strong>Mingjun (Jerry) Zhang</strong></span> <span>DPhil student in Computer Science, University of Oxford</span></p>
+        <div class="actions">
+          <a class="btn" href="https://github.com/HurricaHjz/SecondSelf" target="_blank" rel="noopener">SecondSelf on GitHub <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-quiet" href="#contact">Get in touch</a>
+        </div>
+      </div>
+
+      <div class="tagbar" data-dim>
+        <p class="tag"><span class="k">Oxford</span> <span class="v" id="clock">--:--</span></p>
+        <a class="tag tag-scroll" href="#about"><span class="k">Scroll</span> <span class="v" aria-hidden="true">↓</span></a>
+        <button class="tag tag-sound" id="sound" type="button" aria-pressed="false" title="Turn the title into a music box: move across it to play"><span class="k">Sound</span> <span class="v">off</span></button>
+      </div>
+    </section>
+
+    <!-- ============================== Jerry, in brief: first, since the site is his ============================== -->
+    <section class="section" id="about" aria-labelledby="about-h" data-dim>
+      <p class="eyebrow" data-reveal><span class="num">01</span> About</p>
+      <div class="about-head">
+        <h2 class="name" id="about-h" data-reveal>Mingjun <span class="soft">(Jerry)</span> Zhang</h2>
+        <div class="about-bio" data-reveal>
+          <p class="role">DPhil student in Computer Science, University of Oxford (Kellogg College)</p>
+          <p>My DPhil research trains language models to give an answer together with a calibrated confidence, so that they know when to defer. I am supervised by Prof. Ani Calinescu and Prof. Michael Wooldridge, and I am a member of the Large Agent Collider.</p>
+        </div>
+      </div>
+
+      <ul class="bento">
+        <li class="tile card t-fig" data-reveal>
+          <p class="tile-fig">1<sup>st</sup></p>
+          <p class="tile-h">in the School of Computing, 2024</p>
+          <p class="tile-p">Australian National University. Bachelor of Advanced Computing (R&amp;D) (Honours), First Class.</p>
+        </li>
+        <li class="tile card t-fig" data-reveal>
+          <p class="tile-fig">1<sup>st</sup></p>
+          <p class="tile-h">among all international students</p>
+          <p class="tile-p">Terrell International Scholarship, 2022, ANU.</p>
+        </li>
+        <li class="tile card" data-reveal>
+          <p class="tile-k">2024 <span>ANU</span></p>
+          <p class="tile-serif">University Medal</p>
+          <p class="tile-p">And the Erin Brent Computer Science Prize: top graduate in Engineering, Computing &amp; Cybernetics.</p>
+        </li>
+        <li class="tile card" data-reveal>
+          <p class="tile-k">2026 <span>Cosmos Institute</span></p>
+          <p class="tile-serif">Cosmos x FIRE Grant</p>
+          <p class="tile-p">AI and Truth-seeking.</p>
+        </li>
+        <li class="tile card t-fig" data-reveal>
+          <p class="tile-fig">4.8<span class="of">/5.0</span></p>
+          <p class="tile-h">student feedback at Oxford</p>
+          <p class="tile-p">Class tutor and marker for Artificial Intelligence. Before that, Senior Tutor at ANU: more than 300 students.</p>
+        </li>
+        <li class="tile card t-pub" data-reveal>
+          <p class="tile-k">Poster <span>ACM AsiaCCS 2025</span></p>
+          <p class="tile-h">When Models Speak Too Much: Privacy Leakage on Large Language Models</p>
+          <p class="tile-p"><a href="https://scholar.google.com/citations?user=8eFcGUgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a></p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ============================== aiMyth, in his public words ============================== -->
+    <section class="section" id="aimyth" aria-labelledby="aimyth-h" data-dim>
+      <p class="eyebrow" data-reveal><span class="num">02</span> aiMyth</p>
+      <h2 class="statement" id="aimyth-h" data-reveal>aiMyth <span class="soft">(open-sourced as SecondSelf)</span> builds your <em>second self</em> by giving your AI harness a <em>“mind”</em> of your own.</h2>
+
+      <div class="lede" data-reveal>
+        <p>The mind is made of your knowledge, rules and lessons, kept in interconnected files stored on your own computer, and it can learn, improve, do tasks and organise teams of agents just as you would have done yourself, from whatever harness you already use, such as Claude Code.</p>
+        <p class="lede-side">Today it runs in Claude Code, and GPT models can join as subagents through the Codex CLI.</p>
+      </div>
+
+      <dl class="facts" data-reveal>
+        <div><dt>v0.10</dt><dd>released in November 2026</dd></div>
+        <div><dt>June 2026</dt><dd>in daily use since</dd></div>
+        <div><dt>100+</dt><dd>GitHub stars</dd></div>
+        <div><dt>Built alone</dt><dd>from scratch</dd></div>
+        <div><dt>arXiv</dt><dd>preprint forthcoming</dd></div>
+      </dl>
+
+      <blockquote class="belief" data-reveal>
+        <p>We believe that once everyone has the same strongest models and the same harnesses, what will set you apart is <em>the mind you build.</em></p>
+      </blockquote>
+
+      <div class="moments-head" data-reveal>
+        <h3 class="sub">Six moments from the film</h3>
+        <p class="sub-note">Each one plays from that point.</p>
+      </div>
+      <ul class="moments" id="moments">
+        <li data-reveal>
+          <a class="moment card" href="film/aimyth-film.mp4#t=66.02" data-t="66.02">
+            <span class="moment-img"><img src="assets/moments/sources.jpg" width="1120" height="504" loading="lazy" decoding="async" alt="Film still: one paper becomes four linked notes, each naming its source and a trust grade."><span class="moment-time"><svg viewBox="0 0 24 24" width="10" height="10" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg> 1:06</span></span>
+            <span class="moment-title">You can see why.</span>
+            <span class="moment-text">Every answer shows its sources and how far to trust them, and every rule keeps its reason.</span>
+          </a>
+        </li>
+        <li data-reveal>
+          <a class="moment card" href="film/aimyth-film.mp4#t=77.35" data-t="77.35">
+            <span class="moment-img"><img src="assets/moments/team.jpg" width="1120" height="504" loading="lazy" decoding="async" alt="Film still: a lead and a team of researcher, writer, designer, builder and critic working in a loop, checked by a verifier."><span class="moment-time"><svg viewBox="0 0 24 24" width="10" height="10" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg> 1:17</span></span>
+            <span class="moment-title">Big jobs get done even while you sleep.</span>
+            <span class="moment-text">Hand over a job of any size, and aiMyth sets up the teams and workflows it needs, as you would yourself, and works through it within your rules.</span>
+          </a>
+        </li>
+        <li data-reveal>
+          <a class="moment card" href="film/aimyth-film.mp4#t=100.08" data-t="100.08">
+            <span class="moment-img"><img src="assets/moments/handback.jpg" width="1120" height="504" loading="lazy" decoding="async" alt="Film still: a Handback report sorting a finished job into Decide, Approve, Your to-dos, Undo if you disagree and Done."><span class="moment-time"><svg viewBox="0 0 24 24" width="10" height="10" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg> 1:40</span></span>
+            <span class="moment-title">It strengthens you, never replaces you.</span>
+            <span class="moment-text">It takes on the work and brings every real decision back to you.</span>
+          </a>
+        </li>
+        <li data-reveal>
+          <a class="moment card" href="film/aimyth-film.mp4#t=103.28" data-t="103.28">
+            <span class="moment-img"><img src="assets/moments/lesson.jpg" width="1120" height="504" loading="lazy" decoding="async" alt="Film still: three green ticks in a row, labelled Stored, Delivered and Followed."><span class="moment-time"><svg viewBox="0 0 24 24" width="10" height="10" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg> 1:43</span></span>
+            <span class="moment-title">Tell it once.</span>
+            <span class="moment-text">A correction you give today shapes every later job that needs it, including the work it hands to its teams.</span>
+          </a>
+        </li>
+        <li data-reveal>
+          <a class="moment card" href="film/aimyth-film.mp4#t=115.08" data-t="115.08">
+            <span class="moment-img"><img src="assets/moments/one-mind.jpg" width="1120" height="504" loading="lazy" decoding="async" alt="Film still: many tool windows around one mind at the centre."><span class="moment-time"><svg viewBox="0 0 24 24" width="10" height="10" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg> 1:55</span></span>
+            <span class="moment-title">One mind behind every window.</span>
+            <span class="moment-text">However many windows you open, with any agent in any tool, you always talk to the same mind.</span>
+          </a>
+        </li>
+        <li data-reveal>
+          <a class="moment card" href="film/aimyth-film.mp4#t=122.02" data-t="122.02">
+            <span class="moment-img"><img src="assets/moments/models.jpg" width="1120" height="504" loading="lazy" decoding="async" alt="Film still: the mind above a slot where one model is swapped for the next, labelled every better model, a free upgrade."><span class="moment-time"><svg viewBox="0 0 24 24" width="10" height="10" aria-hidden="true"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></svg> 2:02</span></span>
+            <span class="moment-title">Every better model makes it stronger.</span>
+            <span class="moment-text">Each better model, and each better Claude Code or Codex, is a free upgrade, and any part can be swapped for a better tool.</span>
+          </a>
+        </li>
+      </ul>
+      <p class="honest" data-reveal>Some of these describe where aiMyth is going. <a href="https://github.com/HurricaHjz/SecondSelf#what-runs-today" target="_blank" rel="noopener">What runs today</a> lists what works now and where to check it.</p>
+
+      <div class="start card" data-reveal>
+        <div class="start-text">
+          <h3 class="sub">Clone it, run the set-up, and start talking.</h3>
+          <p>aiMyth comes as a folder of rules and skills that you clone onto your own computer and open in an AI coding agent. Released under the MIT License.</p>
+          <a class="btn" href="https://github.com/HurricaHjz/SecondSelf" target="_blank" rel="noopener">SecondSelf on GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="term" role="group" aria-label="The commands that set aiMyth up">
+          <div class="term-bar" aria-hidden="true"><i></i><i></i><i></i><span>terminal</span></div>
+          <div class="term-code" id="term-code">
+            <code>git clone https://github.com/HurricaHjz/SecondSelf.git</code>
+            <code>cd SecondSelf</code>
+            <code>bash setup.sh</code>
+          </div>
+          <button class="copy" type="button" data-copy="git clone https://github.com/HurricaHjz/SecondSelf.git&#10;cd SecondSelf&#10;bash setup.sh" aria-label="Copy the three commands">Copy</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================== Reach him ============================== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-h" data-dim>
+      <p class="eyebrow" data-reveal><span class="num">03</span> Contact</p>
+      <h2 class="contact-h" id="contact-h" data-reveal>Get involved</h2>
+      <p class="contact-lede" data-reveal>We are looking for people and support to take this further: research collaborators, internships, compute, funding, and anyone who wants to build their own mind on aiMyth and tell us what breaks.</p>
+
+      <div class="mail" data-reveal>
+        <a class="mail-link" href="mailto:jerry.zhang@kellogg.ox.ac.uk"><span>jerry.zhang</span><span>@kellogg.ox.ac.uk</span></a>
+        <button class="copy copy-mail" type="button" data-copy="jerry.zhang@kellogg.ox.ac.uk" aria-label="Copy the email address">Copy</button>
+      </div>
+
+      <ul class="links" data-reveal>
+        <li><a href="https://github.com/HurricaHjz/SecondSelf" target="_blank" rel="noopener">aiMyth on GitHub <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://github.com/HurricaHjz" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://www.linkedin.com/in/mj4life/" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://scholar.google.com/citations?user=8eFcGUgAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar <span aria-hidden="true">↗</span></a></li>
+        <li><a href="https://www.inet.ox.ac.uk/people/jerry-zhang" target="_blank" rel="noopener">INET Oxford <span aria-hidden="true">↗</span></a></li>
+      </ul>
+      <p class="oxford-time" data-reveal>It is <span id="clock-2">--:--</span> in Oxford.</p>
+    </section>
   </main>
+
+  <footer class="foot" data-dim>
+    <p>Mingjun (Jerry) Zhang</p>
+    <p><a href="#top">Back to the film <span aria-hidden="true">↑</span></a></p>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
 </body>
 </html>
